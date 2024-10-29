@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project on Methods and Loops</title>
+</head>
+<body>
+    <h1>String Methods in JS</h1>
+    <p id="cars"></p>
+    <script>
+        var str="DeFiNiTiOn"
+        document.write(str.toLocaleUpperCase())
+        document.write("<br>")
+        document.write(str.toLocaleLowerCase())
+        document.write("<br>")
+        document.write(str.startsWith("F"))
+        document.write("<br>")
+        document.write(str.endsWith("n"))
+
+        //Loops in JS
+
+        var cars=["LEXUS", "FERARRI", "MCLAREN", "TOYOTA", "MASERATI"];
+        var text="";
+        var i;
+        for (i=0;i<cars.length;i++){
+            text += cars[i] + "<br>";
+        }
+        document.getElementById("cars").innerHTML=text;
+    </script>
+</body>
+</html>
